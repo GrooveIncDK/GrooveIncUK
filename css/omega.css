@@ -1,0 +1,104 @@
+:root{
+  --omega-blue: #0F4D5A;
+  --omega-bg: #E9EBEB;
+  --omega-card: #ffffff;
+  --omega-border: rgba(15,77,90,.14);
+  --omega-shadow: 0 18px 45px rgba(0,0,0,.10);
+  --omega-radius: 16px;
+}
+
+body{ background: var(--omega-bg); }
+
+.omega-hero{
+  padding: 56px 0 34px;
+  background: var(--omega-bg);
+}
+
+.omega-kicker{
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: rgba(15,77,90,.75);
+  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.omega-title{
+  font-family: "Raleway", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 800;
+  color: var(--omega-blue);
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.05;
+  margin: 0;
+}
+
+.omega-subtitle{
+  color: rgba(11,47,54,.85);
+  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.btn-omega-primary{
+  background: var(--omega-blue);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.0);
+  border-radius: 999px;
+  padding: 10px 16px;
+  box-shadow: 0 10px 24px rgba(15,77,90,.18);
+}
+.btn-omega-primary:hover{ background: #0c3f49; color:#fff; }
+
+.btn-omega-ghost{
+  background: rgba(255,255,255,.55);
+  color: var(--omega-blue);
+  border: 1px solid rgba(15,77,90,.18);
+  border-radius: 999px;
+  padding: 10px 16px;
+  backdrop-filter: blur(8px);
+}
+.btn-omega-ghost:hover{ background: rgba(255,255,255,.75); color: var(--omega-blue); }
+
+.omega-main{ padding: 18px 0 58px; }
+
+.omega-card{
+  background: var(--omega-card);
+  border: 1px solid var(--omega-border);
+  border-radius: var(--omega-radius);
+  box-shadow: var(--omega-shadow);
+  padding: 18px;
+}
+
+.omega-h2{
+  font-family: "Raleway", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 800;
+  color: var(--omega-blue);
+  font-size: 22px;
+  margin: 0;
+}
+
+.omega-muted{
+  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: rgba(11,47,54,.70);
+  font-size: 13px;
+}
+
+.omega-pdf-embed{
+  border-radius: 16px;
+  overflow:hidden;
+  border: 1px solid rgba(0,0,0,.08);
+  background: #fff;
+}
+.omega-pdf-embed iframe{
+  width: 100%;
+  height: 560px;
+  border: 0;
+}
+
+@media (max-width: 991.98px){
+  .omega-hero{ padding: 44px 0 22px; }
+  .omega-pdf-embed iframe{ height: 520px; }
+}
+@media (max-width: 420px){
+  .omega-pdf-embed iframe{ height: 460px; }
+}
