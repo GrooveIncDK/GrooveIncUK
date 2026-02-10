@@ -12,10 +12,6 @@
     crossorigin="anonymous"
   />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/omega.css" />
 </head>
@@ -56,11 +52,38 @@
             View the official PDF online or download it.
           </p>
 
-          <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-omega-primary" href="assets/omega/omega.pdf" download>Download PDF</a>
-            <a class="btn btn-omega-ghost" href="assets/omega/omega.pdf" target="_blank" rel="noopener">Open PDF</a>
-            <a class="btn btn-omega-ghost" href="#preview">Preview</a>
+          <div class="omega-links">
+            <a class="omega-link" href="assets/omega/omega.pdf" target="_blank" rel="noopener">
+              Open PDF
+              <span class="omega-link-svg" aria-hidden="true">
+                <svg viewBox="0 0 120 24" aria-hidden="true">
+                  <line x1="0" y1="12" x2="88" y2="12"></line>
+                  <polygon points="88,0 120,12 88,24"></polygon>
+                </svg>
+              </span>
+            </a>
+
+            <a class="omega-link" href="assets/omega/omega.pdf" download>
+              Download PDF
+              <span class="omega-link-svg" aria-hidden="true">
+                <svg viewBox="0 0 120 24" aria-hidden="true">
+                  <line x1="0" y1="12" x2="88" y2="12"></line>
+                  <polygon points="88,0 120,12 88,24"></polygon>
+                </svg>
+              </span>
+            </a>
+
+            <a class="omega-link" href="#preview">
+              Jump to Preview
+              <span class="omega-link-svg" aria-hidden="true">
+                <svg viewBox="0 0 120 24" aria-hidden="true">
+                  <line x1="0" y1="12" x2="88" y2="12"></line>
+                  <polygon points="88,0 120,12 88,24"></polygon>
+                </svg>
+              </span>
+            </a>
           </div>
+
         </div>
       </div>
     </div>
@@ -75,9 +98,26 @@
             <div class="omega-muted">Embedded preview of the official document.</div>
           </div>
 
-          <div class="d-flex gap-2">
-            <a class="btn btn-omega-primary" href="assets/omega/omega.pdf" download>Download</a>
-            <a class="btn btn-omega-ghost" href="assets/omega/omega.pdf" target="_blank" rel="noopener">Open</a>
+          <div class="omega-links omega-links--compact">
+            <a class="omega-link" href="assets/omega/omega.pdf" target="_blank" rel="noopener">
+              Open PDF
+              <span class="omega-link-svg" aria-hidden="true">
+                <svg viewBox="0 0 120 24" aria-hidden="true">
+                  <line x1="0" y1="12" x2="88" y2="12"></line>
+                  <polygon points="88,0 120,12 88,24"></polygon>
+                </svg>
+              </span>
+            </a>
+
+            <a class="omega-link" href="assets/omega/omega.pdf" download>
+              Download PDF
+              <span class="omega-link-svg" aria-hidden="true">
+                <svg viewBox="0 0 120 24" aria-hidden="true">
+                  <line x1="0" y1="12" x2="88" y2="12"></line>
+                  <polygon points="88,0 120,12 88,24"></polygon>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
 
