@@ -1,13 +1,73 @@
 :root{
-  --omega-blue: #0F4D5A;
-  --omega-bg: #E9EBEB;
-  --omega-card: #ffffff;
-  --omega-border: rgba(15,77,90,.14);
-  --omega-shadow: 0 18px 45px rgba(0,0,0,.10);
-  --omega-radius: 16px;
+  --omega-blue:#114D59;
+  --omega-bg:#E9EBEB;
+  --omega-card:#ffffff;
+  --omega-border:#114D59;
+  --omega-shadow:none;
+  --omega-radius:0px;
 }
 
-body{ background: var(--omega-bg); }
+body{ font-family: Helvetica, Arial, sans-serif; background: var(--omega-bg); }
+
+.omega-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px 28px;
+  align-items:flex-start;
+}
+
+.omega-links--compact{
+  gap:10px 16px;
+}
+
+.omega-link{
+  display:inline-flex;
+  flex-direction: column;
+  align-items:flex-start;
+  gap:10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--omega-blue);
+  text-decoration: none;
+}
+
+.omega-link:hover{
+  text-decoration: underline;
+}
+
+.omega-link-arrow{
+  display:none !important;
+}
+
+.omega-link-svg{
+  width:78px;
+  height:19px;
+  color: var(--omega-blue);
+  transition: transform .2s ease;
+}
+
+.omega-link-svg svg{
+  width:100%;
+  height:100%;
+}
+
+.omega-link-svg line{
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: butt;
+  fill: none;
+}
+
+.omega-link-svg polygon{
+  fill: currentColor;
+  stroke: none;
+}
+
+.omega-link:hover .omega-link-svg{
+  transform: translateX(6px);
+}
 
 .omega-hero{
   padding: 56px 0 34px;
@@ -18,12 +78,12 @@ body{ background: var(--omega-bg); }
   letter-spacing: .12em;
   text-transform: uppercase;
   font-size: 12px;
-  color: rgba(15,77,90,.75);
-  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: rgba(17,77,89,.75);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .omega-title{
-  font-family: "Raleway", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: var(--omega-blue);
   font-size: clamp(30px, 4vw, 44px);
@@ -33,44 +93,24 @@ body{ background: var(--omega-bg); }
 
 .omega-subtitle{
   color: rgba(11,47,54,.85);
-  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   max-width: 62ch;
 }
 
-.btn-omega-primary{
-  background: var(--omega-blue);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,.0);
-  border-radius: 999px;
-  padding: 10px 16px;
-  box-shadow: 0 10px 24px rgba(15,77,90,.18);
-}
-.btn-omega-primary:hover{ background: #0c3f49; color:#fff; }
-
-.btn-omega-ghost{
-  background: rgba(255,255,255,.55);
-  color: var(--omega-blue);
-  border: 1px solid rgba(15,77,90,.18);
-  border-radius: 999px;
-  padding: 10px 16px;
-  backdrop-filter: blur(8px);
-}
-.btn-omega-ghost:hover{ background: rgba(255,255,255,.75); color: var(--omega-blue); }
-
 .omega-main{ padding: 18px 0 58px; }
 
 .omega-card{
   background: var(--omega-card);
-  border: 1px solid var(--omega-border);
+  border: 4px solid var(--omega-border);
   border-radius: var(--omega-radius);
   box-shadow: var(--omega-shadow);
   padding: 18px;
 }
 
 .omega-h2{
-  font-family: "Raleway", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 800;
   color: var(--omega-blue);
   font-size: 22px;
@@ -78,27 +118,32 @@ body{ background: var(--omega-bg); }
 }
 
 .omega-muted{
-  font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: rgba(11,47,54,.70);
   font-size: 13px;
 }
 
 .omega-pdf-embed{
-  border-radius: 16px;
+  border-radius: 0;
   overflow:hidden;
-  border: 1px solid rgba(0,0,0,.08);
-  background: #fff;
+  border: 0;
+  background: transparent;
 }
+
 .omega-pdf-embed iframe{
   width: 100%;
   height: 560px;
   border: 0;
+  display:block;
 }
 
 @media (max-width: 991.98px){
   .omega-hero{ padding: 44px 0 22px; }
   .omega-pdf-embed iframe{ height: 520px; }
+  .omega-link-svg{ width:66px; height:16px; }
 }
+
 @media (max-width: 420px){
   .omega-pdf-embed iframe{ height: 460px; }
+  .omega-link-svg{ width:60px; height:15px; }
 }
