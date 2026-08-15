@@ -1,101 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Groove Inc — Contact</title>
-
-  <!-- Bootstrap 5 -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
-  />
-
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/contact.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Groove Inc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:ital,wght@0,800;1,800&family=Bricolage+Grotesque:ital,opsz,wght@1,12..96,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
-  <!-- Header / Nav bar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <img src="assets/main/groove.svg" alt="Groove Inc" width="84" height="41" />
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#giNav" aria-controls="giNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="giNav">
-        <ul class="navbar-nav align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="yourfootprint.html">Your Footprint</a></li>
-		  <li class="nav-item"><a class="nav-link" href="omega.html">Omega Document</a></li>
-        </ul>
-      </div>
+  <header class="site-header">
+    <div class="header-row">
+      <a class="brand" href="index.html"><img class="brand-mark-img" src="images/groove-logo.png" alt="Groove Inc"></a>
+      <nav class="nav" aria-label="Primary navigation" id="primaryNav">
+      <a href="document.html">The Omega Document</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="journey.html">Journey</a>
+        <a href="contact.html" class="nav-cta" class="current">Start a conversation</a>
+      </nav>
+      <button class="menu-toggle" id="mobileToggle" aria-expanded="false">☰</button>
     </div>
+  </header>
+  <div class="nav-drawer-overlay" id="navOverlay"></div>
+  <nav class="mobile-drawer" id="mobileDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+    <a href="document.html">The Omega Document</a>
+    <a href="solutions.html">Solutions</a>
+    <a href="journey.html">Journey</a>
+    <a href="contact.html" class="nav-cta" class="current">Start a conversation</a>
   </nav>
 
-  <div class="spacer-nav"></div>
+  <div class="page-header">
+    <div class="wrap">
+      <div class="crumb"><a href="index.html">Home</a> / Contact</div>
+      <h1>Let's define what your brand needs to be.</h1>
+      <p class="lead">The Discovery Sprint is the strategic groundwork for an Omega Document — ambition, audience and positioning before production begins.</p>
+    </div>
+  </div>
 
-  <!-- Contact -->
-  <section id="contact-page">
-    <div class="contact-canvas">
-      <h1 class="contact-title">Contact</h1>
-      <p class="contact-subtitle">
-		If you would like to contact us, please fill out the form. And<br>
-		we will get back to you as soon as possible.
-	  </p>
+  <section class="section">
+    <div class="cta-card">
+      <div>
+        <span class="section-kicker">START HERE</span>
+        <h2>Fixed fee. Low commitment.</h2>
+        <p>€1,500, roughly two to three weeks, credited in full toward the build if you proceed to an Omega Document tier. If you don't proceed, you keep the strategy work regardless.</p>
+      </div>
+      <a class="button button-dark" href="mailto:hello@grooveinc.uk">Start a conversation →</a>
+    </div>
+  </section>
 
-
-      <div class="form-scale">
-        <div class="form-card">
-          <form action="#" method="post" novalidate id="contact-form">
-            <div class="form-inner">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required />
-
-              <label for="surname">Surname</label>
-              <input id="surname" name="surname" type="text" required />
-
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="email" required />
-
-              <label for="phone">Phone number (Optional)</label>
-              <input id="phone" name="phone" type="tel" />
-
-              <label for="message">Write your message</label>
-              <textarea id="message" name="message"></textarea>
-            </div>
-          </form>
-        </div>
-
-        <div class="text-center">
-          <button type="submit" form="contact-form" class="send-btn">SEND</button>
-        </div>
+  <section class="section" style="padding-top:0;">
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Address</h3>
+        <p>Fynshovedvej 584<br>5390 Martofte, Denmark</p>
+      </div>
+      <div class="contact-card">
+        <h3>Direct</h3>
+        <p><a href="tel:+4531155327">+45 3115 5327</a></p>
+        <p><a href="mailto:admin@grooveinc.dk">admin@grooveinc.dk</a></p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container-fluid">
-      <div class="d-flex justify-content-center gap-2">
-        <span>Groove Inc © 2025.</span>
-        <a href="privacy-policy.html">Privacy Policy</a>
+  <footer class="footer">
+    <div class="footer-row">
+      <div>
+        <img class="footer-mark" src="images/groove-logo.png" alt="Groove Inc">
+        <div class="footer-links">
+          <a href="document.html">The Omega Document</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="journey.html">Journey</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>Different Goals — Different Solutions</p>
+        <p>Fynshovedvej 584, 5390 Martofte, Denmark · +45 3115 5327 · admin@grooveinc.dk</p>
+        <p>Groove Inc is a trading name of Staalbaek IT Dev ApS, Denmark (CVR <em>41564571</em>).</p>
       </div>
     </div>
+    <div class="footer-bottom">© 2026 Groove Inc · <a href="privacy.html">Privacy</a> · Terms</div>
   </footer>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
