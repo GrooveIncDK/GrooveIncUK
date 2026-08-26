@@ -81,10 +81,6 @@ em{font-style:italic}
 @media (max-width:880px){
   .nav a:not(.nav-cta){display:none}
   .menu-toggle{display:inline-flex;background:none;border:1px solid var(--line);padding:8px 12px;font-size:.85rem;cursor:pointer;border-radius:6px}
-  .header-row{padding:12px 20px;gap:10px}
-  .brand-mark-img{height:38px}
-  .nav{gap:10px}
-  .nav-cta{padding:8px 14px;font-size:.82rem;white-space:nowrap}
   .mobile-drawer{display:flex}
   .mobile-drawer.open{transform:translateX(0)}
 }
