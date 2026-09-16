@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /old/
+Disallow: /old2/
+Disallow: /backup/
+
+Sitemap: https://www.grooveinc.uk/sitemap.xml
